@@ -67,6 +67,7 @@ public extension  ETButton where L == SwiftUI.Label<Text, Image> {
 
     @available(iOS 17.0, *)
     @available(macOS 14.0, *)
+    @available(tvOS 17.0, *)
     init(_ titleKey: LocalizedStringKey, image: ImageResource, action: @escaping () -> Void) {
         self.label = {
             Label(titleKey, image: image)
@@ -76,6 +77,7 @@ public extension  ETButton where L == SwiftUI.Label<Text, Image> {
 
     @available(iOS 17.0, *)
     @available(macOS 14.0, *)
+    @available(tvOS 17.0, *)
     init<S>(_ title: S, image: ImageResource, action: @escaping () -> Void) where S : StringProtocol {
         self.label = {
             Label(title, image: image)
